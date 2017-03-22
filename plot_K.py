@@ -9,6 +9,7 @@ class Centroid:
     """
     Centroid object
     """
+
     def __init__(self, number, color, position):
         self.number = number
         self.color = color
@@ -92,7 +93,7 @@ def plotCentroids(centroidList):
         centroid.plot()
 
 
-def start():
+def main():
     k = int(sys.argv[1])
     r = lambda: randint(0, 255)
     numberOfCoordinates = 150
@@ -126,4 +127,5 @@ def start():
         plt.show()
 
 
-start()
+if __name__ == "__main__":
+    main()
