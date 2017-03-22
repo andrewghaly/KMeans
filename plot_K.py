@@ -6,6 +6,9 @@ from random import randint
 
 
 class Centroid:
+    """
+    Centroid object
+    """
     def __init__(self, number, color, position):
         self.number = number
         self.color = color
